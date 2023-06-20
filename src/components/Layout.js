@@ -2,6 +2,7 @@
 import styled, { ThemeProvider } from "styled-components";
 import PaceForm from './PaceForm';
 import Header from "./Header";
+import Footer from './Footer'
 const theme = {
   colors: {
     blueDark: "#2a2f43",
@@ -36,6 +37,7 @@ export function Layout(){
             <MainLayout>
                 <PaceForm />
             </MainLayout>
+            <Footer />
         </ThemeProvider>
     )
 }

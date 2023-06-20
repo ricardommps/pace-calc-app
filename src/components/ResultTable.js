@@ -41,6 +41,7 @@ const useStyles = makeStyles({
 });
 
 export default function ResultTable({pace, imperial}){
+    console.log('----PACE---', pace);
     const classes = useStyles();
     let distances = [];
     if (imperial) {

@@ -131,6 +131,7 @@ export default function PaceInput({value,unit, onChangeUnit, onChangeValue}){
     if (valueInUnit?.toFixed) {
         valueInUnit = valueInUnit.toFixed(unitObject.precision);
     }
+    console.log('----VALUE---', value)
     return (
         <InputsContainer>
           <div className="contents">
@@ -154,16 +155,7 @@ export default function PaceInput({value,unit, onChangeUnit, onChangeValue}){
           </div>
           <div className="contents">
             <div className="paces">
-              {(() => {
-                if (true) {
-                  return paceUnits.map(unit => (
-                    <div key={unit.name}>
-                      {Formatter.formatUnit(unit, value)}{" "}
-                      <small>{unit.name}</small>
-                    </div>
-                  ));
-                }
-              })()}
+            <small>{value}</small>
             </div>
           </div>
         </InputsContainer>

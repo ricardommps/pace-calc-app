@@ -53,20 +53,23 @@ export default function DistanceInput({
     return (
         <div className="contents">
             <FormControl component="fieldset" className="title">
-              <FormLabel component="legend">Distância e Tempo</FormLabel>
+              <FormLabel component="legend">Tempo</FormLabel>
               <div>
-                <TextField
-                  type="number"
-                  name="distance"
-                  value={distanceFormatted}
-                  onChange={handleOnChangeDistance}
-                  className="Inputs"
-                  inputProps={{
-                    min: 0,
-                    max: 300,
-                    step: 0.1
-                  }}
-                />
+                {false && (
+                  <TextField
+                    type="number"
+                    name="distance"
+                    value={distanceFormatted}
+                    onChange={handleOnChangeDistance}
+                    className="Inputs"
+                    inputProps={{
+                      min: 0,
+                      max: 300,
+                      step: 0.1
+                    }}
+                  />
+                )}
+               
                 <TextField
                   type="time"
                   name="time"

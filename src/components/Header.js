@@ -13,7 +13,7 @@ const HeaderContainer = styled.header`
 export default function Header(){
     return (
         <HeaderContainer className="App-header">
-          <h1><span role="img" aria-label="Calculate your Pace">⏱️</span> Calculate your Pace!</h1>
+          <h1><span role="img" aria-label="Calculate your Pace">⏱️</span> Calcule o seu Pace!</h1>
         </HeaderContainer>
     );
 }
